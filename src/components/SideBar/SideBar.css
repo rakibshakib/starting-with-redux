@@ -1,0 +1,13 @@
+.navStyle{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: auto 20px;
+    position: fixed;
+   
+}
+.navStyle span{
+    color: rgb(73, 73, 255); 
+    text-decoration: none !important;
+    
+}
