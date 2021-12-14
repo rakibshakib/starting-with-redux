@@ -1,9 +1,17 @@
-import React from 'react'
+import React from 'react';
+import { useSelector } from 'react-redux';
+import RemovePeopleCart from './RemovePeopleCart';
 
 const RemovePeople = () => {
+    const removedPeople = useSelector((state) => state.peoples.removedPeople);
+
     return (
         <div>
-            <h2>this is for people remove</h2>
+             <div>
+                {
+                    removedPeople.map(item => <RemovePeopleCart item={item} key={item.id} />)
+                }
+            </div>
         </div>
     )
 }
